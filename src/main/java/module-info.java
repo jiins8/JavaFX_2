@@ -12,6 +12,6 @@ module com.example.javafx_2 {
     requires com.almasb.fxgl.all;
     requires eu.hansolo.fx.countries;
     requires eu.hansolo.toolbox;
-    opens com.example.javafx_2 to javafx.fxml;
-    exports com.example.javafx_2;
+    opens com.example.generador_dni to javafx.fxml;
+    exports com.example.generador_dni;
 }
