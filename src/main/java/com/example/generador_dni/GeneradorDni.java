@@ -9,16 +9,15 @@ import java.io.IOException;
 
 public class GeneradorDni extends Application {
     @Override
-    public void start(Stage stage){
+    public void start(Stage stage) {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(GeneradorDni.class.getResource("generador_dni.fxml"));
             Scene scene = new Scene(fxmlLoader.load());
             stage.setScene(scene);
             stage.show();
-        }catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
-    }
-
+        }
     }
 
     public static void main(String[] args) {
