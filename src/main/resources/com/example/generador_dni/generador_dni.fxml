@@ -17,7 +17,7 @@
                <children>
                   <VBox prefHeight="400.0" prefWidth="300.0">
                      <children>
-                         <fx:include source="usuario.fxml" />
+                         <fx:include fx:id="usuario" source="usuario.fxml"  />
                      </children>
                   </VBox>
                </children>

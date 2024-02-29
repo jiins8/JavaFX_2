@@ -1,10 +1,8 @@
 package com.example.generador_dni;
 
-import com.example.moduloUsuario.UsuarioController;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 import java.net.URL;
@@ -22,20 +20,18 @@ public class GeneradorDniController implements Initializable {
 
     @FXML
     private void onClickDniBtn() {
-        String nombre = String.valueOf(txtNom);
-        String apellido = String.valueOf(txtCognom);
 
-        dni.setText(nombre + " " + apellido);
     }
 
     @FXML
     private void onClickDeleteBtn(){
-        String vacio = "";
-
-        dni.setText(vacio);
-        txtNom.setText(vacio);
-        txtCognom.setText(vacio);
+        dni.setText("");
+        usuarioController.setTxtNom("");
+        usuarioController.setTxtCognom("");
+        usuarioController.setTxtMultiplicador("");
     }
+
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
