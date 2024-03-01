@@ -7,11 +7,11 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class GeneradorDni extends Application {
+public class DniGenerator extends Application {
     @Override
     public void start(Stage stage) {
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(GeneradorDni.class.getResource("generador_dni.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(DniGenerator.class.getResource("dni_generator.fxml"));
             Scene scene = new Scene(fxmlLoader.load());
             stage.setScene(scene);
             stage.show();

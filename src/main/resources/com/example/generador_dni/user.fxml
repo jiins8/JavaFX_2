@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.generador_dni.userController">
+   <children>
+      <Label layoutX="57.0" layoutY="70.0" text="Name" />
+      <TextField fx:id="txtName" layoutX="57.0" layoutY="98.0" />
+      <Label layoutX="57.0" layoutY="142.0" text="Surname" />
+      <TextField fx:id="txtSurname" layoutX="57.0" layoutY="169.0" />
+      <Label layoutX="57.0" layoutY="216.0" text="Multiplier" />
+      <TextField fx:id="txtMultiplier" layoutX="57.0" layoutY="247.0" />
+   </children>
+</AnchorPane>
