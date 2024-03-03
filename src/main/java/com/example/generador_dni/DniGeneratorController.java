@@ -30,13 +30,21 @@ public class DniGeneratorController implements Initializable {
         String surname = userController.getTxtSurname().getText();
 
         String letters = getFirstLetters(name, surname);
-
         if (letters.length() < 7) {
             toastMsg.setText("Name and surname must have at least 7 letters");
             toastMsg.setFill(Color.RED);
             return;
+        }else if (name.isBlank() || surname.isBlank()){
+            toastMsg.setText("Name and surname must not be empty");
+            toastMsg.setFill(Color.RED);
+            return;
+        }
+        else if (!name.matches("^[a-zA-Z]+$") || !surname.matches("^[a-zA-Z]+$")) {
+            toastMsg.setText("Name and surname must contain letters without accents ");
+            toastMsg.setFill(Color.RED);
+            return;
         } else {
-            toastMsg.setText("");
+            toastMsg.setText("DNI GENERATED");
             toastMsg.setFill(Color.GREEN);
         }
 
